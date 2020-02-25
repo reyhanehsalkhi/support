@@ -19,17 +19,6 @@ public class FileWriterTest {
 	Hashing hashing = new Hashing();
 	File file;
 
-	/*
-	 * @Test public void testEquals_Symmetric() throws IOException { if (new
-	 * File("/tmp/temp/sub3").mkdirs()) { writer.writeTo("/tmp/temp/sub3/file.txt",
-	 * "this is some random text"); if (new File("/tmp/temp1/sub3").mkdirs()) {
-	 * writer.writeTo("/tmp/temp1/sub3/file.txt", "this is some random text"); } }
-	 * Assert.assertEquals(hashing.compareHashforPath("/tmp/temp1",
-	 * "/tmp/temp/"),true);
-	 * 
-	 * }
-	 */
-
 	@Test
 	public void testNotEquals_Symmetric() throws IOException {
 
