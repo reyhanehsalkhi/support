@@ -1,14 +1,9 @@
 package test;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
 import org.writer.Writer;
-
 import hash.folder.Hashing;
 import junit.framework.Assert;
 
