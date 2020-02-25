@@ -13,12 +13,8 @@ import hash.folder.Hashing;
 import junit.framework.Assert;
 
 public class FileWriterTest {
-	@Rule
-	public TemporaryFolder folder = new TemporaryFolder();
 	FileWriter writer;
 	Hashing hashing = new Hashing();
-	File file;
-
 	@Test
 	public void testNotEquals_Symmetric() throws IOException {
 
