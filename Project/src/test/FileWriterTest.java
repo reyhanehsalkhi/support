@@ -13,8 +13,8 @@ import hash.folder.Hashing;
 import junit.framework.Assert;
 
 public class FileWriterTest {
-	FileWriter writer;
 	Hashing hashing = new Hashing();
+	
 	@Test
 	public void testNotEquals_Symmetric() throws IOException {
 
@@ -52,23 +52,22 @@ public class FileWriterTest {
 
 		File path1 = new File("/tmp/temp/sub3");
 		File path2 = new File("/tmp/temp1/sub3");
-		String text1 = "this is some text";
-		String text2 = "this is some text";
+		String text = "this is some text";
 		Writer writer = new Writer();
 		try {
 			if (!path1.isDirectory()) {
 				if (path1.mkdirs())
-					writer.writeTo(path1 + "/file.txt", text1);
+					writer.writeTo(path1 + "/file.txt", text);
 			} else {
-				writer.writeTo(path1 + "/file.txt", text1);
+				writer.writeTo(path1 + "/file.txt", text);
 			}
 
 			if (!path2.isDirectory()) {
 				if (path2.mkdirs())
-					writer.writeTo(path2 + "/file.txt", text2);
+					writer.writeTo(path2 + "/file.txt", text);
 
 			} else {
-				writer.writeTo(path2 + "/file.txt", text2);
+				writer.writeTo(path2 + "/file.txt", text);
 			}
 
 		} catch (Exception e) {
